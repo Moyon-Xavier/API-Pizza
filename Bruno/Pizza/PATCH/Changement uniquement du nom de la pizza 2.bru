@@ -1,0 +1,18 @@
+meta {
+  name: Changement uniquement du nom de la pizza 2
+  type: http
+  seq: 1
+}
+
+patch {
+  url: http://localhost:8080/sae-boumansour-moyon/pizza/10
+  body: json
+  auth: none
+}
+headers {
+  Authorization: Basic WGF2aWVyOnBhc3NYYXZpZXI=
+}
+
+body:json {
+  {"nom":"Pizza"}
+}

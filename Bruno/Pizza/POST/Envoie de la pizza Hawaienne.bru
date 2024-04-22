@@ -1,0 +1,23 @@
+meta {
+  name: Envoie de la pizza Hawaienne
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/sae-boumansour-moyon/pizza/
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Basic WGF2aWVyOnBhc3NYYXZpZXI=
+}
+
+body:json {
+  {"pno":2555,
+  "nom":"Etrange",
+  "prix":4,
+  "compo":[1,2,3,4]
+  }
+}

@@ -1,0 +1,21 @@
+meta {
+  name: AddAnanasWithNotAvailableId
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/sae-boumansour-moyon/ingredient/
+  body: json
+  auth: none
+}
+
+body:json {
+  {"id":"1",
+    "name":"Ananas",
+  "price":"20.0"}
+}
+
+docs {
+  Cette requete doit échoué car l'id souhaité est dejà occupé
+}

@@ -1,0 +1,20 @@
+meta {
+  name: AddAvocatWithoutId
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/sae-boumansour-moyon/ingredient/
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Basic WGF2aWVyOnBhc3NYYXZpZXI=
+}
+
+body:json {
+  {"name":"Avocats",
+  "price":"2.0"}
+}

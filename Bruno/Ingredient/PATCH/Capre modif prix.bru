@@ -1,0 +1,18 @@
+meta {
+  name: Capre modif prix
+  type: http
+  seq: 1
+}
+
+patch {
+  url: http://localhost:8080/sae-boumansour-moyon/ingredient/7
+  body: json
+  auth: none
+}
+headers {
+  Authorization: Basic WGF2aWVyOnBhc3NYYXZpZXI=
+}
+
+body:json {
+  {"price":1200}
+}

@@ -1,0 +1,23 @@
+meta {
+  name: AddCommande
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/sae-boumansour-moyon/commande
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Basic WGF2aWVyOnBhc3NYYXZpZXI=
+}
+
+body:json {
+  {"cno" : 5724,
+  "userName" : "Illies",
+  "date" : "2024-03-12",
+  "prix" : 20.5,
+  "contient" : [1]}
+}

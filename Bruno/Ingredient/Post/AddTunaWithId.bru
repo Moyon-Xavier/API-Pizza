@@ -1,0 +1,20 @@
+meta {
+  name: AddTunaWithId
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/sae-boumansour-moyon/ingredient/
+  body: json
+  auth: none
+}
+headers {
+  Authorization: Basic WGF2aWVyOnBhc3NYYXZpZXI=
+}
+
+body:json {
+  {"id":"13",
+   "name":"Tuna",
+  "price":"4.0"}
+}

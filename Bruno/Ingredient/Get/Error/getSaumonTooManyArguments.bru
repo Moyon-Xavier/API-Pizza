@@ -1,0 +1,15 @@
+meta {
+  name: getSaumonTooManyArguments
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:8080/sae-boumansour-moyon/ingredient/1/name/2
+  body: none
+  auth: none
+}
+
+docs {
+  Cette requete doit retourner une erreur badRequest
+}

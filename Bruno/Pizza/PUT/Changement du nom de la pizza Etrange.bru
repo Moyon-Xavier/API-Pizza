@@ -1,0 +1,19 @@
+meta {
+  name: Changement du nom de la pizza Etrange
+  type: http
+  seq: 1
+}
+headers {
+  Authorization: Basic WGF2aWVyOnBhc3NYYXZpZXI=
+}
+
+put {
+  url: http://localhost:8080/sae-boumansour-moyon/pizza/5
+  body: json
+  auth: none
+}
+
+body:json {
+  {"nom":"Pizza Illies","compo":[-11111,1,2,3,4
+                                ,1111]}
+}
